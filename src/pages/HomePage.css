@@ -1,2 +1,7 @@
 
+.teaser-container {
+    display: flex;
+    flex-direction: column;
+    
+}
 

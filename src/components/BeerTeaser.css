@@ -1,0 +1,24 @@
+
+.teaser {
+    text-decoration: none;
+    color: black;
+}
+
+.teaser-img-container {
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+
+}
+.teaser-img {
+    min-height:100%; 
+    min-width: 100%; 
+    object-fit: cover;
+}
+
+.teaser-content {
+    padding: 5px 20px 20px 20px;
+}

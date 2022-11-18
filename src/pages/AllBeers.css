@@ -1,0 +1,37 @@
+
+.list-item {
+    text-decoration: none;
+    color: black;
+    display:flex;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border-bottom: solid 1px grey;
+    text-align: start;
+}
+
+.list-img-container{
+    width: 100px;
+}
+
+.list-img {
+    height: 130px;
+}
+
+.list-img-content {
+    padding-left: 10px;
+}
+
+.tagline {
+    color: grey;
+    font-size: 18px;
+}
+
+.subline {
+    font-size: 12px;
+    font-weight: bold;
+}
+.subline > span {
+
+    font-weight: 400;
+}

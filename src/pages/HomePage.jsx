@@ -11,14 +11,17 @@ function HomePage() {
             <BeerTeaser 
                 img={beersImg}
                 title="All Beers"
+                path="/beers"
             />
             <BeerTeaser
                 img={newBeersImg}
                 title="Random Beer"
+                path="/random-beer"
             />
             <BeerTeaser
                 img={randomBeersImg}
                 title="New Beer"
+                path="/new-beer"
             />
         </section>
     )
