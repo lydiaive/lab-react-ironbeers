@@ -92,7 +92,7 @@ function NewBeerPage() {
             <input name="tagline" type="text" value={input.tagline} onChange={(event) => setInput({...input, tagline: event.target.value})}/>
 
             <label>Description</label>
-            <textarea name="description" rows="4" cols="50" value={input.description} onChange={(event) => setInput({...input, description: event.target.value})}></textarea>
+            <textarea name="description" rows="4" cols="39" value={input.description} onChange={(event) => setInput({...input, description: event.target.value})}></textarea>
 
             <label>First brewed</label>
             <input name="first_brewed" type="text" value={input.first_brewed} onChange={(event) => setInput({...input, first_brewed: event.target.value})}/>
