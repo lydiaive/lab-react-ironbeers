@@ -1,0 +1,30 @@
+
+.detail-img {
+    height: 40vh;
+    padding: 20px;
+}
+.detail-content {
+    margin: 0 30px;
+    text-align: start;
+}
+
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.font-grey {
+    color: grey;
+}
+
+.sm-bold {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.bold {
+    font-size: 18px;
+    font-weight: bold;
+}

@@ -1,4 +1,4 @@
-import './AllBeers.css';
+import './AllBeersPage.css';
 import axios from "axios"
 import { useEffect, useState } from "react"
 import Navbar from "../components/Navbar"
