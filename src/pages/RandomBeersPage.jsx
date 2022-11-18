@@ -13,7 +13,6 @@ function RandomBeersPage() {
        const apiCall = async () => {
         try {
             const res = await axios.get(apiEndpoint)
-            console.log(res.data)
             setBeer(res.data)
         } catch (error) {
             console.log(error)

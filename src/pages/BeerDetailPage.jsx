@@ -3,7 +3,6 @@ import axios from "axios"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar"
-import { Link } from 'react-router-dom';
 
 const apiEndpoint = "https://ih-beers-api2.herokuapp.com/beers/"
 
@@ -16,7 +15,6 @@ function BeerDetailPage() {
        const apiCall = async () => {
         try {
             const res = await axios.get((apiEndpoint + beersId))
-            console.log(res.data)
             setBeer(res.data)
         } catch (error) {
             console.log(error)
