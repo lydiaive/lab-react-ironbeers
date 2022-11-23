@@ -3,11 +3,21 @@ import axios from "axios"
 import { useEffect, useState } from "react"
 import Navbar from "../components/Navbar"
 import { Link } from 'react-router-dom';
+import { useSearchParams } from "react-router-dom";
+import searchIcon from "../assets/search.png"
 
-const apiEndpoint = "https://ih-beers-api2.herokuapp.com/beers"
+
+
+
+const orgApiEndpoint = "https://ih-beers-api2.herokuapp.com/beers"
 
 function AllBeersPage() {
 
+    const [searchParam, setSearchParam] = useSearchParams()
+    
+
+
+    const [apiEndpoint, SetApiEndpoint] = useState(orgApiEndpoint)
     const [beers, setBeers] = useState([])
  
     useEffect(() =>{
@@ -21,11 +31,22 @@ function AllBeersPage() {
        }
  
        apiCall()
-    }, [])
+    }, [apiEndpoint])
+
+    const searchHandler = (event) => {
+        const {name, value} = event.target;
+        setSearchParam({[name]: value})
+        SetApiEndpoint(orgApiEndpoint+"/search?q="+value)
+        console.log(searchParam)
+    }
 
     return (
         <main>
             <Navbar/>
+            <div className="searchbar">
+                <input className="search-input" name="q" onChange={searchHandler}/>
+                <img className="search-icon" src={searchIcon} alt="search"/>
+            </div>
             <section className="beers-list">
                 {beers && beers.map((beer) => {
                     return (
